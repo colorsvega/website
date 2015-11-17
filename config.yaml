@@ -4,6 +4,6 @@ layoutdir: "layouts"
 publishdir: "public"
 indexes:
   category: "categories"
-baseurl: "http://caveza.github.io/"
+baseurl: "http://caveza.github.io/website/"
 title: "Caveza website"
 ...
