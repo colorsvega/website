@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://caveza.github.io/</loc>
+    <loc>http://caveza.github.io/website/</loc>
     <lastmod>2014-03-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://caveza.github.io/posts/newest/</loc>
+    <loc>http://caveza.github.io/website/posts/newest/</loc>
     <lastmod>2014-03-29T00:00:00+00:00</lastmod>
   </url>
   
