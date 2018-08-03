@@ -1,0 +1,528 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 24px;
+}
+
+body {
+  color: #555;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+{
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+dd,dl,h1,h2,h3,ul,p,blockquote {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+dd,li{
+  float: left;
+}
+
+li{
+  list-style: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.nope {
+  display: none !important;
+}
+
+.visuallyhidden { 
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.invalid::after {
+  content: attr(data-error);
+  display: block;
+  position: absolute;
+}
+
+.logo {
+  background: top left url("img/logo_colorVega.png") no-repeat;
+  display: block;
+  height: 90px;
+  left: 0;
+  margin: 2rem 0 0 5rem;
+  outline: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  padding-left: 52px;
+    color: black;
+    text-decoration: none;
+    font-size: 34px;
+}
+
+.lightbox {
+  background-color: rgba(0,0,0,0.9);
+  color: #FFF;
+  display: table;
+  height: 110%;
+  padding: 2rem 5rem;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+  .lightbox-close {
+    background-color: transparent;
+    border: none;
+    line-height: 3rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3rem;
+  }
+  
+  .lightbox-close:hover,
+  .lightbox h2 {
+    color: #8FC510;
+  }
+
+  .lightbox p {
+    margin: 2rem auto;
+  }
+
+  .lightbox a {
+    color: #FFF;
+  }
+
+.lightbox-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+  .lightbox-content > * {
+    display: block;
+    margin: 0 auto;
+  }
+
+.green-button {
+  background-color: #8FC510;
+  color: #FFF;
+  letter-spacing: 0.05rem;
+}
+
+  .green-button.alternative {
+    background-color:#00D9D9;
+  }
+[class$=slide] {
+  background-color: #FFF;
+  min-height: 30rem;
+  min-width: 32rem;
+  padding: 5rem;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+[class$=slide]::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  [class$=slide] h2 {
+    color: #00cbff
+  }
+
+  [class$=slide] a {
+    color: #555;
+  }  
+
+  [class$=slide] blockquote::before {
+    content: "\201C";
+  }
+
+  [class$=slide] blockquote::after {
+    content: "\201D";
+  }
+
+.title {
+  display: block;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+.subtext {
+  font-size: 0.75rem;
+}
+
+.slide-content {
+  margin: 1rem 0;
+}
+
+/* intro specifics */
+.intro-slide {
+  background: right bottom url("img/wow2.jpg") no-repeat;
+  background-size: contain; 
+  padding-top: 7rem;
+  text-align: left;
+}
+
+/* timeline specifics */
+.timeline-slide {
+  background: #020203 center center url("img/bg_squint.jpg") no-repeat;
+  background-size: cover;
+  color: #FFF;
+}
+
+.timeline-slide h2 {
+  color: #FFF;
+}
+
+.timeline-slide .subtitle {
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+
+.timeline-wrapper > * {
+  margin: 0 auto 1rem auto;
+}
+
+.milestone {
+  font-size: 0.62rem;
+      background: rgba(0,0,0,.6);
+}
+  .milestone .title {
+    font-size: 0.54rem;
+  }
+
+  .milestone > * {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .milestone .title::after {
+    border: 0.3rem solid #FFF;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    margin: 1rem auto;
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+
+.milestone:nth-child(1) .title::after {
+  background-color: #C7A200;
+}
+
+.milestone:nth-child(2) .title::after {
+  background-color: #FF7A4D;
+  height: 1rem;
+  width: 1rem;
+  margin: 1.3rem auto;
+}
+
+.milestone:nth-child(3) .title::after {
+  background-color: #00D9D9;
+}
+
+.site{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 13rem;
+}
+
+  .smalling-slide figure {
+    font-size: 1.3rem;
+    float: right;
+  }
+  
+  .reece-slide .title,
+  .smalling-slide .title {
+    font-size: 0.67rem;
+    margin-top: 1rem;
+  }
+
+/* hey bob */
+.reece-slide figure {
+  background: center top url("img/client_photo.jpg") no-repeat;
+  background-size: 9em;
+  padding-top: 10em;
+}
+
+.pushers-slide .title,
+.reece-slide .title {
+  color: #00cbff;
+}
+
+/* pixel pushers */
+.pushers-slide {
+  background: center center url("img/bg_team.jpg") no-repeat;
+  background-size: cover;
+  color: #FFF;
+}
+
+  .pushers-slide .subtext {
+    margin: 1rem auto;
+  }
+
+  .pushers-slide footer {
+    margin-top: 2rem;
+    font-size: 0.54rem;
+  }
+
+  .pushers-slide li {
+    display: block;
+    float: none;
+  }
+
+/* in touch slide */
+.in-touch-slide p + p {
+  margin-top: 1rem;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTeY5mlVXtdNkpsMpKkrDXP4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSuY5mlVXtdNkpsMpKkrDXP4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(http://fonts.gstatic.com/s/opensans/v10/EInbV5DfGHOiMmvb1Xr-huY5mlVXtdNkpsMpKkrDXP4.woff) format('woff');
+}
+#mce-responses {
+  display: none;
+}
+
+.newsletter_inputmail {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin-top: 1.5rem;
+  padding:0 1rem;
+}
+
+.validate {
+  margin-bottom: 2rem;
+}
+figure {
+  margin: 0;
+}
+
+.pure-g {
+  letter-spacing: inherit;
+  font-family: inherit;
+}
+
+  .pure-g [class *= "pure-u"] {
+    font-family: inherit;
+  }
+
+.pure-button {
+  font-size: 0.67rem;
+  line-height :2rem;
+  margin-top: 1.5rem;
+  padding: 0 1.5rem;
+}
+@media screen and (max-width: 80em){
+  html {
+    font-size: 20px;
+  }
+  
+  .lightbox,
+  [class$=slide] {
+    padding: 3rem;
+  }
+
+  .lightbox {
+    font-size: 4vh;
+    padding-top: 1rem;
+  }
+
+  .logo {
+    margin-left: 3rem;
+  }
+
+  .intro-slide {
+    background-size: 80%;
+    padding-top: 7rem;
+  }
+
+  .smalling-slide {
+    background-position: 40% top;
+  }
+}
+
+@media screen and (max-width: 35.5em){
+  html {
+    font-size: 14px;
+  }
+
+  h2 {
+    line-height: 2.2rem;
+  }
+
+  [class$=slide] {
+    min-width: 10rem;
+    padding: 2.2rem;
+    text-align: center;
+  }
+
+  .logo {
+    margin-left: 2.2rem;
+  }
+
+  .intro-slide {
+    background-size: 90%; 
+    min-height: 40rem;
+    padding-top: 7rem;
+    text-align: left;
+  }
+
+  .timeline-slide {
+    background-position: center top;
+    background-size: 160%;
+  }
+
+  .timeline-slide .pure-button {
+    display: none;
+  }
+
+  .milestone {
+    float: none;
+    display: block;
+  }
+
+    .milestone .title {
+      font-size: 0.67rem;
+    }
+
+      .milestone:nth-child(2) .title::after {
+        left: 0%;
+      }
+
+      .milestone .title::after {
+        position: absolute;
+        left: 50%;
+        margin: 0;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+      }      
+
+    .milestone p {
+      font-size: 0.83rem;
+    }
+
+    .milestone > * {
+      float: right;
+      margin: 0 2rem 0 0;
+      width: 75%;
+    }
+
+    .milestone:nth-child(1),
+    .milestone:nth-child(3) {
+      text-align: right;
+    }
+
+    .milestone:nth-child(2) {
+      left: 50%;
+      position: relative;
+      text-align: left;
+    }
+
+    .milestone:nth-child(2) > * {
+      float: left;
+      margin: 0 0 0 2rem
+    }
+
+  .portfolio-slide .site {
+    margin-bottom: 1rem;
+  }
+
+  .portfolio-slide .slide-content {
+    margin-bottom: 0;
+  }
+
+  .smalling-slide {
+    background-size: cover;
+    background-position: left top;
+    padding: 0;
+  }
+
+    .smalling-slide figure {
+      background-color: rgba(23,10,7,0.7);
+      float: none;
+      font-size: 1.2rem;
+      min-height: 32rem;
+      width: 100%;
+      padding: 6rem 3rem;
+    }
+
+  .reece-slide {
+    font-size: 1.25rem;
+  }
+
+  .pushers-slide,
+  .in-touch-slide {
+    padding-top: 7rem;
+  }
+
+  .newsletter_inputmail {
+    line-height: 3rem;
+  }
+
+  .pure-button {
+    font-size: 1rem;
+    letter-spacing: 0;
+    line-height :3rem;
+  }
+
+  .lightbox {
+    padding: 1rem;
+  }
+
+  .lightbox p {
+    width: 100%;
+  }
+}
+
+.reece-slide {
+    min-height: 20rem;
+  }
